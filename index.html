@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link id='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="jquery-3.1.1.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+
+    <div id="content">
+
+
+        <div class="wrap">
+            <div class="memory">m=<small></small></div>
+
+            <div class="cal">
+                <span class="title">Standart</span>
+                <a class="show_history" >&laemptyv;</a>
+                <div class="screen">0</div>
+                <input type="hidden" class="outcome" value="" />
+                <ul class="buttons">
+                    <li><a class="mrecall" >MR</a></li>
+                    <li><a class="val" id="(">(</a></li>
+                    <li><a class="val" id=")">)</a></li>
+                    <li><a class="" >?</a></li>
+                    <li><a class="mclear" >MC</a></li>
+                    <li><a class="msave" >MS</a></li>
+                    <li><a class="mplus" >M+</a></li>
+                    <li><a class="mminus" >M-</a></li>
+                    <li><a class="percent" >%</a></li>
+                    <li><a class="sqrt" >&radic;</a></li>
+                    <li><a class="sqr" >x<sup>2</sup></a></li>
+                    <li><a class="fraction" >1/x</a></li>
+                    <li><a class="clear_last" >CE</a></li>
+                    <li><a class="clear" id="c">C</a></li>
+                    <li><a class="delete" >&#171;</a></li>
+                    <li><a class="val operation" id="/">&divide;</a></li>
+                    <li><a class="val digit" id="7">7</a></li>
+                    <li><a class="val digit" id="8">8</a></li>
+                    <li><a class="val digit" id="9">9</a></li>
+                    <li><a class="val operation" id="*">&times;</a></li>
+                    <li><a class="val digit" id="4">4</a></li>
+                    <li><a class="val digit" id="5">5</a></li>
+                    <li><a class="val digit" id="6">6</a></li>
+                    <li><a class="val operation" id="-">-</a></li>
+                    <li><a class="val digit" id="1">1</a></li>
+                    <li><a class="val digit" id="2">2</a></li>
+                    <li><a class="val digit" id="3">3</a></li>
+                    <li><a class="val operation" id="+">+</a></li>
+                    <li><a class="plusmn" id="">&plusmn;</a></li>
+                    <li><a class="val digit" id="0">0</a></li>
+                    <li><a class="val" id=".">.</a></li>
+                    <li><a class="equal" id="=">=</a></li>
+                </ul>
+            </div>
+
+            <div class="history">
+                <ul class="list"></ul>
+            </div>
+        </div>
+
+    </div> <!-- content -->
+</div> <!-- wrapper -->
+
+<script src="script.js"></script>
+<script>if (window.module) module = window.module;</script>
+</body>
+</html>
